@@ -1,0 +1,20 @@
+pipeline
+{
+    agent any
+    stages
+    {
+        stage('Build') {
+            steps {
+                echo "processing build"
+                echo "PATH = ${PATH}"
+                echo "M2_HOME = ${M2_HOME}"
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                echo "Processing Testing....."
+            }
+        }
+    }
+}
